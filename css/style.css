@@ -1,0 +1,261 @@
+/* pasada la tipografia */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300;1,900&display=swap');
+/* pasado  */
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+/*  pasado */
+html{
+    height: 100%;
+    overflow-x: hidden;  
+}
+
+
+/* color de los textos */
+body p, h1, h2, summary{
+    color: rgb(255, 255, 255);
+}
+.card-text{
+    color:rgb(0, 0, 0);
+}
+
+/* pasado */
+footer nav{
+    background-color:rgb(46, 1, 71);
+}
+/* pasado */
+footer{
+    animation-delay: 1.5s;
+}
+/* pasado */
+header nav{
+    background-color:rgb(46, 1, 71);
+}
+
+
+/* Pasado */
+/* cambio el tiempo de activacion del fadein de la imagen de la guitarra */
+.img-delay{
+    animation-delay: 1s;
+}
+
+/* pasado */
+/* ajuste de los videos */
+.video1, .video2, .video3{
+    margin: 15px;
+    text-align: center;
+}
+/* Pasado */
+iframe{
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(177, 21, 21, 0.658);
+}
+
+/* Pasado */
+.imagen-index{
+    overflow: hidden;
+    position: relative;
+}
+
+/*  Pasado background de todas las paginas menos index */
+#contacto{
+    background-color: black;
+    background-image: url(../imagenes/background3.jpg);
+    background-position-x: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* pasado */
+body{
+    background-color: black;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+/* Pasado Posiciono el footer abajo siempre */
+footer{
+    margin-top: auto;
+}
+
+/* Pasado Cambio color de texto y estilo de fuente del footer */
+footer nav a{
+    font-family: 'Merriweather', serif !important;
+}
+/* Pasado */
+.text-color{
+    color: white;
+}
+
+/* Pasado Botones formulario */
+
+form fieldset .boton_formulario input:hover{
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+    transition: all 0.2s ease;
+}
+
+form fieldset .boton_formulario input{
+    background-color: rgba(0, 0, 255, 0.164);
+    border-radius: 5px;
+    color: white;
+    border: transparent;
+    padding: 5px;
+    cursor: pointer;
+}
+/* Pasado Aca al contenido del formulario lo centramos y le damos color al texto */
+.formulario-centrado{
+    text-align: center;
+    color: aliceblue;
+}
+/* Pasado Cambio color de texto y estilo de fuente del header  listo las a, falta el sobre nosotros*/
+header nav a, #sobre_nosotros{
+    font-family: 'Merriweather', serif !important;
+    color: white !important;
+}
+
+/* Pasado */
+header nav a:hover{
+    transform: scale(1.05);
+    transition: all ease 1s;
+}
+
+
+
+/* Pasado Aca le damos un poco de estilo a los botones y que cuando pase por encima cambie a manito*/
+button{
+    background-color: rgba(95, 10, 173, 0.349);
+    border-radius: 5px;
+    color: white;
+    border: transparent;
+    padding: 5px;
+    cursor: pointer;
+}
+    /* Pasado Efecto somreado a los botones GENIAL!!! */
+button:hover{
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 16px rgb(255, 255, 255);
+    transition: all 0.2s ease;
+}
+
+/*Pasado Botones de cards */
+
+.btncards:hover{
+    color:rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 16px rgb(0, 0, 0);
+    transition: all 0.2s ease;
+}
+
+.btncards{
+    background-color: rgba(0, 0, 255, 0.541);
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 1);
+    border: transparent;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+
+#scroll{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+/* Pasado pero revisar */
+
+@media(max-width: 412px){
+
+    .imagenempresarial img{
+        max-width: 88%;
+}
+/* Cambio el tamaño de los videos para celular */
+    iframe{
+        width: 75%;
+        height: auto;
+
+    }
+    .body-img{
+        background-size: contain;
+        height: 100%;
+    }
+    .video1, .video2, .video3{
+        margin: 10px;
+    }
+
+}
+@media(max-width: 800px){
+    .body-img{
+        background-size: contain;
+        height: 100%;
+    }
+    iframe{
+        width: 70%;
+    }
+}
+/* Pasado */
+.img-nosotros{
+    text-align: center;
+}
+
+/* Pasado */
+.logo-index{
+    text-align: center;
+}
+
+/* pasado */
+.img-guit{
+    width: 55%;
+    box-shadow: 0 4px 16px rgb(199, 11, 11);
+    border-radius: 35px;
+    
+}
+/* Pasado Delays de las cards creo */
+.delay{
+    animation-delay: 0.5s
+}
+/* no lo pasamos */
+.altura{
+    height: fit-content;
+}
+/* Pasado Sombreado de las cards */
+.sombreado{
+    box-shadow: 8px 8px 8px 1px rgba(14, 35, 155, 0.445);
+}
+
+
+/* Pasado Texto colapse */
+
+.desplegable,
+a[name='more']:target ~ .ver_mas {
+visibility: hidden;
+width:0;
+height:0; 
+}
+
+a[name='more']:target ~ .desplegable {
+visibility: visible;
+width: auto;
+height: auto;
+}
+
+/* Manejo del padding  */
+
+p{
+    margin: 0px;
+}
+#p2{
+    margin-bottom: 2%;
+}
+/* Redondeo de imagenes */
+.borde-redondo{
+    border-radius: 5px;
+}
+

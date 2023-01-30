@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300;1,900&display=swap");
+
+$mainFont: "Merriweather", serif;
+$hfcolor: rgb(46, 1, 71);
+$sombreado_rojo: 0 4px 16px rgb(199, 11, 11);
+$sombreado_negro: 8px 8px 8px 1px rgba(0, 0, 0, 0.712);
+$sombreado_blanco: 8px 8px 8px 1px rgba(255, 255, 255, 0.712);
+$sombreado_seguir_leyendo: 8px 0px 8px 1px rgba(255, 255, 255, 0.712);
+$color_boton: rgba(49, 49, 49, 0.801);
+$color_boton_seguir_leyendo: rgba(0, 0, 0, 0.801);
+$color_bg_boton_acordeon: rgba(0, 0, 0, 0.671);
+$texto_rojo:rgb(153, 9, 9);
+$texto_blanco: rgb(255, 255, 255);
+
+
+//aca declaramos los valores de los botones y hover
+%botones {
+    background-color: $color_boton;
+    border-radius: 5px;
+    color: rgb(254, 254, 255);
+    border: transparent;
+    padding: 5px;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: $sombreado_negro;
+        transition: all 0.2s ease-in-out;
+        background-color: rgba(45, 67, 192, 0.788);
+    }
+}
+
+//aca declaramos los valores de los botones y hover de seguir leyendo
+%botones_seguir_leyendo {
+    background-color: $color_boton_seguir_leyendo;
+    box-shadow: none !important;
+    border-radius: 5px;
+    color: rgb(254, 254, 255);
+    border: transparent;
+    cursor: pointer;
+    padding: 0px;
+
+    &:hover {
+        box-shadow: $sombreado_seguir_leyendo !important;
+        color: rgb(254, 254, 255);
+        transition: all 0.2s ease-in-out;
+        background-color: rgba(45, 67, 192, 0.788);
+    }
+}
+
+
+//mixin sin parametros
+@mixin acordeon {
+    font-family:$mainFont ;
+    color: rgb(0, 0, 0) !important;
+}
+
+//mixin con parametros
+@mixin acordeon2 ($fontstyle, $fontwidth){
+    font-style:$fontstyle ;
+    font-weight:$fontwidth;
+}
+
+//maps paleta
+$colors:(
+    "facebook": rgb(3, 19, 243),
+    "instagram":  rgb(138, 58, 185),
+    "youtube": rgb(170, 6, 6),
+    "paypal": rgb(59, 123, 191),
+    "generico": rgb(255, 255, 255),
+
+);
+    
+
+
+//creamos un text colapse gral
+
+.desplegable,
+a[name="more"]:target~.ver_mas {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+a[name="more"]:target~.desplegable {
+    visibility: visible;
+    width: auto;
+    height: auto;
+}
+

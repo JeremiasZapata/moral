@@ -1,0 +1,18 @@
+main{
+    
+    form{
+        fieldset{
+            .formulario-centrado{
+                text-align: center;
+                color: $texto_blanco;
+                font-family: $mainFont;
+            }
+            .boton_formulario{
+                input{
+                    @extend %botones; // el %botones esta en variables
+                } 
+
+                }
+            }
+        }
+    }

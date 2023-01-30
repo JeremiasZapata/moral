@@ -1,0 +1,21 @@
+main{
+    .video{
+        margin: 15px;
+        text-align: center;
+        iframe{
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: $sombreado_negro;
+
+        }
+        a{
+            button{
+                @extend %botones;
+            }
+        }
+    }
+    
+}
+
+
+

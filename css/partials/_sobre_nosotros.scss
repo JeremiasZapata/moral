@@ -1,0 +1,39 @@
+/* Texto colapse */
+
+.desplegable,
+a[name='more']:target ~ .ver_mas {
+visibility: hidden;
+width:0;
+height:0; 
+}
+
+a[name='more']:target ~ .desplegable {
+visibility: visible;
+width: auto;
+height: auto;
+}
+main{
+    p, h1{
+        color: $texto_blanco;
+        font-weight:600;
+        font-style: italic;
+        }
+    }
+    .img-nosotros{
+            text-align: center;
+            img{
+                box-shadow: $sombreado_negro;
+                border-radius: 5px;
+            }
+            
+    }
+    details{
+        summary{
+            color: $texto_rojo; 
+            margin-bottom: 10px;
+            }
+    }
+
+.btn-seguir-leyendo{
+    @extend %botones_seguir_leyendo;
+}

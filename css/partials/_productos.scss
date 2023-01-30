@@ -1,0 +1,13 @@
+main{
+    .sombreado{
+        box-shadow: $sombreado_negro;
+    }
+    .delay{
+        animation-delay: 0.5s
+    }
+    .btn{
+        @extend %botones_cards;
+    }
+}
+// el %botones esta en variables
+
