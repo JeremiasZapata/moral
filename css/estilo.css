@@ -79,6 +79,7 @@ body {
   background-repeat: no-repeat;
   background-image: url(../../imagenes/background5.webp);
   size: 100vh;
+  background-attachment: fixed;
 }
 
 @media (max-width: 412px) {
@@ -122,8 +123,7 @@ header ul li a:hover {
 
 footer {
   margin-top: auto;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  animation-delay: 1.5s;
 }
 footer nav {
   background: rgb(0, 0, 0);
@@ -235,6 +235,11 @@ main h2 button {
 body {
   background: #000000;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  justify-content: center;
+}
+
+.integrantes {
+  text-align: center;
 }
 
 .conteudo-geral {

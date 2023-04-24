@@ -9,7 +9,13 @@
 body {
   background: #000000;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  justify-content: center;
 }
+
+.integrantes{
+  text-align: center;
+}
+
 
 .conteudo-geral {
   position: relative;
@@ -17,6 +23,8 @@ body {
   height: 75vh;
   padding: 15px 15px;
   margin-top: 5px;
+  
+  
 }
 .componente-interno-geral {
   position: relative;
